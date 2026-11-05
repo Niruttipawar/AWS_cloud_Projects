@@ -1,0 +1,92 @@
+AWS 3-Tier Architecture Using Terraform !
+
+Overview
+
+This project demonstrates the design and implementation of a scalable, secure, and highly available 3-Tier Web Application Architecture on Amazon Web Services (AWS).
+The architecture separates the application into three independent layers: Presentation Tier, Application Tier, and Database Tier. Each layer has specific responsibilities, improving security, scalability, maintainability, and performance.
+The infrastructure is provisioned using **Terraform (Infrastructure as Code)**, making it easier to automate, manage, and reproduce cloud resources.
+
+Architecture Components
+
+1. Presentation Tier
+- Application Load Balancer (ALB)
+- Public Subnets
+- Internet Gateway
+- Handles incoming user requests and distributes traffic.
+
+2. Application Tier
+- Amazon EC2
+- Auto Scaling Group
+- Private Subnets
+- Hosts application logic and processes user requests.
+
+3. Database Tier
+- Amazon RDS (MySQL/PostgreSQL)
+- Private Database Subnets
+- Stores and manages application data securely.
+
+AWS Services & Technologies
+
+| Technology | Purpose |
+|---|---|
+| Amazon VPC | Network isolation |
+| Amazon EC2 | Application hosting |
+| Application Load Balancer | Traffic distribution |
+| Auto Scaling | Automatic scaling |
+| Amazon RDS | Database management |
+| Internet Gateway | Public internet connectivity |
+| NAT Gateway | Outbound internet access |
+| IAM | Identity and access management |
+| Security Groups | Network traffic control |
+| CloudWatch | Monitoring and logging |
+| Terraform | Infrastructure as Code |
+| Git & GitHub | Version control |
+
+Features
+
+- Three-tier architecture implementation.
+- Secure network design using public and private subnets.
+- Traffic distribution using Application Load Balancer.
+- Automatic scaling using EC2 Auto Scaling Groups.
+- Managed relational database using Amazon RDS.
+- Network access control using Security Groups.
+- Infrastructure provisioning using Terraform.
+- Monitoring and resource management using CloudWatch.
+
+Architecture Workflow
+
+User Request → Application Load Balancer → EC2 Application Servers → Amazon RDS Database.
+
+Project Objectives
+
+1. Understand AWS cloud infrastructure and networking.
+2. Implement secure communication between application layers.
+3. Learn Infrastructure as Code using Terraform.
+4. Understand load balancing and automatic scaling.
+5. Develop practical cloud engineering and DevOps skills.
+
+Skills Demonstrated
+
+- AWS Cloud Infrastructure
+- Linux Administration
+- Cloud Networking
+- Infrastructure as Code (Terraform)
+- Network Security
+- Load Balancing
+- Auto Scaling
+- Cloud Monitoring
+- Git and GitHub
+
+Future Improvements
+
+- Implement CI/CD using GitHub Actions.
+- Containerize the application using Docker.
+- Introduce Amazon ECS or Kubernetes.
+- Configure HTTPS using AWS Certificate Manager.
+- Implement centralized logging and monitoring.
+
+Learning Outcome
+
+This project provides hands-on experience in designing and managing AWS infrastructure while developing practical skills relevant to AWS Cloud Engineer, DevOps Engineer, and Cloud Infrastructure Engineer roles.
+
+**Note:** This repository is intended for educational and portfolio purposes. Deployment configurations and AWS resource availability may vary based on region and account permissions.
